@@ -150,15 +150,19 @@ int root(int num)
     return -1; // if no int root for number, returns -1 , used for checks
 }
 
-void printOpenMessageForSodokoSize(){
+void printOpenMessageForSodokoSize()
+{
     printf("Please enter the size of your soduko:\n");
 }
-void printOpenMessageForSodokoSolution(){
+void printOpenMessageForSodokoSolution()
+{
     printf("Please enter your solution:\n");
 }
-void printValidSolution(){
+void printValidSolution()
+{
     printf("Valid solution!\n");
 }
-void printBadSolution(){
+void printBadSolution()
+{
     printf("Bad solution!\n");
 }
