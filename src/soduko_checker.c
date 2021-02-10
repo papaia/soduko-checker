@@ -7,8 +7,6 @@
 #include <stdbool.h>
 #include "soduko_checker.h"
 
-
-
 /*-------------------------------------------------------------------------
   The main program.
  -------------------------------------------------------------------------*/
@@ -31,6 +29,7 @@ int main()
     printBadSolution();
     return 0;
 }
+
 int scan_n()
 {
     int n=0;
@@ -43,8 +42,6 @@ int scan_n()
     } while (!is_true);
     return n;
 }
-
-
 
 int calculate_sumof_nums_smaller_than_n(int n)
 {
@@ -75,6 +72,7 @@ int check_cols(int sodoko[MAX_SIZE][MAX_SIZE], int n)
     }
     return (counter == n);
 }
+
 int check_rows(int sodoko[MAX_SIZE][MAX_SIZE], int n)
 {
     int nums_sum = calculate_sumof_nums_smaller_than_n(n);
@@ -95,7 +93,6 @@ int check_rows(int sodoko[MAX_SIZE][MAX_SIZE], int n)
     return (counter == n);
 }
 
-
 int check_all_squares(int sodoko[MAX_SIZE][MAX_SIZE], int n)
 {
     int i = 0, j = 0, bool_counter = 0, sqrt = root(n);
@@ -112,8 +109,6 @@ int check_all_squares(int sodoko[MAX_SIZE][MAX_SIZE], int n)
     }
     return (bool_counter == n);
 }
-
-
 
 int check_square(int sodoko[MAX_SIZE][MAX_SIZE],int i,int j, int n)
 {
@@ -132,7 +127,6 @@ int check_square(int sodoko[MAX_SIZE][MAX_SIZE],int i,int j, int n)
     }
     return (sum == nums_sum);
 }
-
 
 void scan_sodoko(int sodoko[MAX_SIZE][MAX_SIZE], int n)
 {
@@ -155,9 +149,6 @@ int root(int num)
     }
     return -1; // if no int root for number, returns -1 , used for checks
 }
-
-
-
 
 void printOpenMessageForSodokoSize(){
     printf("Please enter the size of your soduko:\n");
