@@ -45,12 +45,7 @@ int scan_n()
 
 int calculate_sumof_nums_smaller_than_n(int n)
 {
-    int sum = 0;
-    for (int i = 1; i <= n; i++)
-    {
-        sum += i;
-    }
-    return sum;
+  return (n - 1) * n >> 1;
 }
 
 int check_cols(int sodoko[MAX_SIZE][MAX_SIZE], int n)
