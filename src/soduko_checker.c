@@ -32,7 +32,7 @@ int main()
 
 int scan_n()
 {
-    int n=0;
+    int n = 0;
     int is_true = (n > 0 && (root(n) != -1));
     do
     {
