@@ -56,7 +56,7 @@ int check_cols(int sodoko[MAX_SIZE][MAX_SIZE], int n)
     for (int i = 0; i < n; i++)
     {
         sum = 0;
-        for (int j = 0; j <n; j++)
+        for (int j = 0; j < n; j++)
         {
             sum += sodoko[i][j];
         }
